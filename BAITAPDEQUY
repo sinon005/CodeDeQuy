@@ -1,1 +1,44 @@
+1. IN SO TU (N -> 1)
 
+#include <iostream>
+using namespace std;
+
+void de_quy(int n) {
+	if (n > 0) { //Dieu kien (n>0)
+		cout << n << " ";
+		de_quy(n - 1);
+	}								
+}
+int main() {
+	int n;
+	cout << "Nhap n: ";
+	cin >> n; //n=5
+
+	de_quy(n);
+	return 0;
+}
+
+Chú thích: 
+1. de_quy(5)  
+2. void de_quy(int 5) 
+3. if (5>0) {
+4. cout << 5 << " "; 
+5. de_quy(5 - 1) //de_quy(n - 1);
+6. de_quy(4)
+7. if (4 > 0) 
+8. cout << 4 << " ";
+9. de_quy(4 - 1) //de_quy(n - 1);
+10. de_quy(3)
+11. if (3 > 0) 
+12. cout << 3 << " ";
+13. de_quy(3 - 1) //de_quy(n - 1);
+14. de_quy(2) 
+15. if(2 > 0)
+14. cout << 2 << " ";
+15. de_quy(2 - 1) //de_quy(n - 1);
+16. de_quy(1) 
+17. if(1 > 0)
+18. cout << 1 << " ";
+19. de_quy(1 - 1) 
+20. de_quy(0)
+21. if(0 > 0) <sai> <dung de quy>
